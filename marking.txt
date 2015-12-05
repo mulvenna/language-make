@@ -2,8 +2,44 @@ We improved the grammar so the GNU Make functions addsuffix, file, and guile
 would be recognized. We also added tests for recognizing every function as well
 as recognizing comments.
 
-implementation:
-grammars/makefile.cson
+implementation file: grammars/makefile.cson
+implementation: regular expression for meta.scope.function-call.makefile
 
+test file: spec/make-spec.coffee
 tests:
-spec/make-spec.coffee
+it "parses comments correctly", ->
+it "parses `subst` correctly", ->
+it "parses `patsubst` correctly", ->
+it "parses `strip` correctly", ->
+it "parses `findstring` correctly", ->
+it "parses `filter` correctly", ->
+it "parses `sort` correctly", ->
+it "parses `word` correctly", ->
+it "parses `wordlist` correctly", ->
+it "parses `firstword` correctly", ->
+it "parses `lastword` correctly", ->
+it "parses `dir` correctly", ->
+it "parses `notdir` correctly", ->
+it "parses `suffix` correctly", ->
+it "parses `basename` correctly", ->
+it "parses `addsuffix` correctly", ->
+it "parses `addprefix` correctly", ->
+it "parses `join` correctly", ->
+it "parses `wildcard` correctly", ->
+it "parses `realpath` correctly", ->
+it "parses `abspath` correctly", ->
+it "parses `if` correctly", ->
+it "parses `or` correctly", ->
+it "parses `and` correctly", ->
+it "parses `foreach` correctly", ->
+it "parses `file` correctly", ->
+it "parses `call` correctly", ->
+it "parses `value` correctly", ->
+it "parses `eval` correctly", ->
+it "parses `error` correctly", ->
+it "parses `warning` correctly", ->
+it "parses `info` correctly", ->
+it "parses `shell` correctly", ->
+it "parses `guile` correctly", ->
+it "parses `origin` correctly", ->
+it "parses `flavor` correctly", ->
