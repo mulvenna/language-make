@@ -1,0 +1,9 @@
+We improved the grammar so the GNU Make functions addsuffix, file, and guile
+would be recognized. We also added tests for recognizing every function as well
+as recognizing comments.
+
+implementation:
+grammars/makefile.cson
+
+tests:
+spec/make-spec.coffee
